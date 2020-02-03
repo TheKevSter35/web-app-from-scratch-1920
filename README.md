@@ -29,6 +29,8 @@ Goal: Design the web app. Add routes and states. Rendering detail page.
 
 [Slides](https://drive.google.com/open?id=1IqQeu1m0dQiSC_KCvrn8eencAgtYe7X6qT-gm0n9Bmc)
 
+test
+
 ### Week 3 - Wrapping up 🎁
 
 Goal:
