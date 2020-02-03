@@ -1,12 +1,8 @@
 const app = document.getElementById('root')
 
-const logo = document.createElement('img')
-logo.src = 'logo.png'
-
 const container = document.createElement('div')
 container.setAttribute('class', 'container')
 
-app.appendChild(logo)
 app.appendChild(container)
 
 var request = new XMLHttpRequest()
@@ -20,15 +16,15 @@ var request = new XMLHttpRequest()
 //       const card = document.createElement('div')
 //       card.setAttribute('class', 'card')
 
-//       const h1 = document.createElement('h1')
-//       h1.textContent = movie.title
+//       const title = document.createElement('title')
+//       title.textContent = movie.title
 
 //       const p = document.createElement('p')
 //       movie.description = movie.description.substring(0, 300)
 //       p.textContent = `${movie.description}...`
 
 //       container.appendChild(card)
-//       card.appendChild(h1)
+//       card.appendChild(title)
 //       card.appendChild(p)
 //     })
 //   } else {
@@ -47,16 +43,16 @@ request.onload = function() {
         const card = document.createElement('div')
         card.setAttribute('class', 'card')
     
-        const h1 = document.createElement('h1')
-        h1.textContent = data.result.artist.name
+        const title = document.createElement('h2')
+        title.textContent = data.result.artist.name
     
-        const p = document.createElement('p')
-        data.result.track.text = data.result.track.text.substring(0, 300)
-        p.textContent = `${data.result.track.text}...`
+        const lyrics = document.createElement('p')
+        data.result.track.text = data.result.track.text
+        lyrics.textContent = `${data.result.track.text}...`
     
         container.appendChild(card)
-        card.appendChild(h1)
-        card.appendChild(p)
+        card.appendChild(title)
+        card.appendChild(lyrics)
     } else {
       const errorMessage = document.createElement('marquee')
       errorMessage.textContent = `Gah, it's not working!`
@@ -65,3 +61,9 @@ request.onload = function() {
   }
 
 request.send()
+
+
+
+
+
+//Source: https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/
