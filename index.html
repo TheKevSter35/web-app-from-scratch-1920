@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Lyrics</title>
-    <link href="styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <title>Discover Music Api</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 
-  <body>
-      <section>
-    <main id="list"></main>
-    </section>
-    <script src="script.js"></script>
-  </body>
+<body id="music-libary">
+  <section>
+    <main>
+      <h1>Discover Music Api</h1>
+      <form id="searchmusic">
+        <input type="text" id="user-input-field" placeholder="Search a song" required>
+        <button id=submitbtn type="button">Submit</button>
+      </form>
+    </main>
+  </section>
+  <section>
+    <article id="list"></article>
+  </section>
+</body>
+<script src="js/script.js"></script>
+
 </html>
