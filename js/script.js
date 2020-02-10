@@ -30,41 +30,62 @@ function getUserInput() {
 
     if (request.status >= 200 && request.status < 400) {
       console.log(data.result)
-      
+
       data.result.forEach(list => {
-        
+
         const card = document.createElement('ul')
 
 
-        const artist = document.createElement('strong')
-        artist.textContent = list.artist + (" - ") + list.title
+        const title = document.createElement('strong')
+        title.textContent =  list.title
 
 
         const cover = document.createElement('img')
         cover.src = list.cover
 
-        const album = document.createElement('P')
-        album.textContent = ("Album: ") + list.album
         const track = document.createElement('a')
         track.textContent = ("button")
-        track.href = ('#')  + list.track_id
-       
+        track.href = ('#') + list.track_id
+
         block.appendChild(card)
         card.setAttribute('class', 'song')
         card.appendChild(cover)
-        card.appendChild(artist)
-        card.appendChild(album)
+        card.appendChild(title)
         card.appendChild(track)
         track.setAttribute('id', 'show')
         // card.appendChild(title)
-        
+        routie({
+
+          '5cfcacdaba7d19ca6f2f5dd5': function () {
+
+            const details = document.getElementById('info')
+            const container = document.createElement('article')
+            const artist = document.createElement('H2')
+            artist.textContent = list.artist + (" - ") + list.title
+            const cover = document.createElement('img')
+            cover.src = list.cover
+
+            const album = document.createElement('P')
+            album.textContent = ("Album: ") + list.album
+            const track = document.createElement('a')
+            track.textContent = ("button")
+            track.href = ('#') + list.track_id
+
+
+            details.appendChild(container)
+            container.appendChild(artist)
+            container.appendChild(cover)
+            container.appendChild(album)
+            console.log(list.track_id);
+          }
+        });
       })
     } else {
       const errorMessage = document.createElement('P')
       errorMessage.textContent = `Something went wrong :/`
       app.appendChild(errorMessage)
     }
-    
+
   }
   request.send()
 }
@@ -79,4 +100,3 @@ function getUserInput() {
 
 
 // console.log(newData)
-
