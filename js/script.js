@@ -32,7 +32,7 @@ function getUserInput() {
       data.result.forEach(list => {
         var card = document.createElement('ul')
 
-        var artist = document.createElement('Strong')
+        var artist = document.createElement('strong')
         artist.textContent = list.artist + (" - ") + list.title
 
 
