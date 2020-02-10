@@ -1,7 +1,9 @@
-var app = document.getElementById('list')
-var block = document.createElement('li')
+//Source: https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/
 
-var button = document.getElementById('submitbtn')
+const app = document.getElementById('list')
+const block = document.createElement('li')
+
+const button = document.getElementById('submitbtn')
 button.addEventListener("click", getUserInput);
 
 function getUserInput() {
@@ -13,48 +15,68 @@ function getUserInput() {
 
   app.appendChild(block)
 
-  var request = new XMLHttpRequest()
+  const request = new XMLHttpRequest()
   endpoint = 'https://orion.apiseeds.com/api/music/search/?q=',
     searchword = (userInput),
     key = "&apikey=" + "3GIKwZk8GNseBxT3CZsEHLG3Ee34x2KEzjkqyHjzJ9fnvfbpqbH7Kx7zi5QkSuE7",
     limit = "&limit=" + "20",
     url = (endpoint) + (searchword) + (key) + (limit);
 
-  // request.open('GET', 'https://orion.apiseeds.com/api/music/search/?q=unsainted&apikey=3GIKwZk8GNseBxT3CZsEHLG3Ee34x2KEzjkqyHjzJ9fnvfbpqbH7Kx7zi5QkSuE7&limit=20 ', true)
   request.open('GET', (url), true)
-
   request.onload = function () {
     // Begin accessing JSON data here
-    var data = JSON.parse(this.response)
+    const data = JSON.parse(this.response)
+
+
     if (request.status >= 200 && request.status < 400) {
       console.log(data.result)
-
+      
       data.result.forEach(list => {
-        var card = document.createElement('ul')
+        
+        const card = document.createElement('ul')
 
-        var artist = document.createElement('strong')
+
+        const artist = document.createElement('strong')
         artist.textContent = list.artist + (" - ") + list.title
 
 
-        var cover = document.createElement('img')
+        const cover = document.createElement('img')
         cover.src = list.cover
 
-        var album = document.createElement('P')
+        const album = document.createElement('P')
         album.textContent = ("Album: ") + list.album
-
+        const track = document.createElement('a')
+        track.textContent = ("button")
+        track.href = ('#')  + list.track_id
+       
         block.appendChild(card)
+        card.setAttribute('class', 'song')
         card.appendChild(cover)
         card.appendChild(artist)
         card.appendChild(album)
-
+        card.appendChild(track)
+        track.setAttribute('id', 'show')
         // card.appendChild(title)
+        
       })
     } else {
-      var errorMessage = document.createElement('P')
+      const errorMessage = document.createElement('P')
       errorMessage.textContent = `Something went wrong :/`
       app.appendChild(errorMessage)
     }
+    
   }
   request.send()
 }
-//Source: https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/
+
+// let newData = {
+//     id: create_UUID(),
+//     title: data.title,
+//     artist: data.artist,
+//     cover: data.cover,
+//     album: data.album
+//   }
+
+
+// console.log(newData)
+
