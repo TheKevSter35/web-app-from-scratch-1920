@@ -1,6 +1,6 @@
 
 
-## 1.What does your app do, what is the goal? (passing butter)
+## What does your app do, what is the goal? (passing butter)
 
 ![6ede119067a5309569f97222e15a8c3d](https://user-images.githubusercontent.com/43183768/74226067-28c84e80-4cbc-11ea-8fca-dd4eae058378.jpg)
 
@@ -19,15 +19,23 @@ With Discover music api you can search music songs. Basis of keywords it will se
 
 API:  https://orion.apiseeds.com/api/music/search/ 
 
-# Limits:
-* it displays only 10/20 songs per search
-* You can also search artists  
+### Limits:
+* it displays only max 20 songs per search
+* You can also search artists 
+* Rate limit: unknown
 
 ## How does flowed interaction through the application? (interaction diagram)
+(Work in process!!)
 
 ## Which design patterns and best practices
 * Search functionality
 
 ## What would you like to add (feature wishlist / backlog)
 
-* add lyrics to the detailpage (with another API)
+# Wishlist
+* add lyrics to the detail session (with another API)
+
+# backlog
+* Detail session it now shows all the search songs (It needs to search 1)
+
+
