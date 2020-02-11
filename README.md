@@ -30,6 +30,9 @@ APIseeds/music :  https://orion.apiseeds.com/api/music/search/
 <img width="567" alt="f346871f9479694c23592af0ba95ad9d" src="https://user-images.githubusercontent.com/43183768/74240204-bf573880-4cd9-11ea-9163-ec72fe4c0e58.png">
 
 ## How does flowed interaction through the application? (interaction diagram)
+
+<img width="642" alt="6e3f1435527e67a24e73fb8eba28dbf2" src="https://user-images.githubusercontent.com/43183768/74242102-989b0100-4cdd-11ea-838a-e40cecfec867.png">
+
 (Work in process!!)
 
 ## Which design patterns and best practices
