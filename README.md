@@ -1,15 +1,33 @@
-##What does your app do, what is the goal? (passing butter)
-With Discover music api you can search songs by keywords
 
-##Which actors are there in your application? (actor diagram)
 
-##Which API is used and what are the limitations? (rate limit)
+## 1.What does your app do, what is the goal? (passing butter)
+
+![6ede119067a5309569f97222e15a8c3d](https://user-images.githubusercontent.com/43183768/74226067-28c84e80-4cbc-11ea-8fca-dd4eae058378.jpg)
+
+With Discover music api you can search music songs. Basis of keywords it will search any song and generates a list with that keyword. 
+
+* A range of songs to discover
+* Get information about the song
+
+## Which actors are there in your application? 
+
+<img width="706" alt="61fcdb347ce0a6f513d2aad138e8efb0" src="https://user-images.githubusercontent.com/43183768/74226997-cf611f00-4cbd-11ea-91e8-9310f6a75e66.png">
+
+(Work in process!!)
+
+## Which API is used and what are the limitations? (rate limit)
+
 API:  https://orion.apiseeds.com/api/music/search/ 
-Limits: it 
-##How does flowed interaction through the application? (interaction diagram)
 
-##Which design patterns and best practices
+# Limits:
+* it displays only 10/20 songs per search
+* You can also search artists  
 
-##What would you like to add (feature wishlist / backlog)
+## How does flowed interaction through the application? (interaction diagram)
 
+## Which design patterns and best practices
+* Search functionality
 
+## What would you like to add (feature wishlist / backlog)
+
+* add lyrics to the detailpage (with another API)
