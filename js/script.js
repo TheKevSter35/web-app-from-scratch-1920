@@ -47,6 +47,7 @@ const Module = (function () { //self invoking function (private-scope)
           const track = document.createElement('a')
           track.insertAdjacentHTML('beforeEnd', (db.cover, db.title))
           track.href = ('#') + db.track_id
+          // track.href = ('#detail')
 
           block.appendChild(card)
           card.setAttribute('class', 'song')
@@ -57,9 +58,9 @@ const Module = (function () { //self invoking function (private-scope)
           // card.appendChild(title)
           routie({
 
-            '5cfcacdaba7d19ca6f2f5dd5': function () {
-              // const Displaylist = document.getElementById('list')
-              // Displaylist.innerHTML = ""
+             [db.track_id]: function () {
+              const Displaylist = document.getElementById('list')
+              Displaylist.innerHTML = ""
               const hash = window.location.hash.slice(1)
               console.log(hash)
               console.log(db.track_id)
