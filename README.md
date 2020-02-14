@@ -31,7 +31,8 @@ APIseeds/music :  https://orion.apiseeds.com/api/music/search/
 
 ## How does flowed interaction through the application? (interaction diagram)
 
-<img width="" alt="6e3f1435527e67a24e73fb8eba28dbf2" src="https://user-images.githubusercontent.com/43183768/74242102-989b0100-4cdd-11ea-838a-e40cecfec867.png">
+<img width="" alt="ID" src="https://user-images.githubusercontent.com/43183768/74519430-f44fcf00-4f15-11ea-8500-2f23f430989d.png">
+
 
 (Work in process!!)
 
