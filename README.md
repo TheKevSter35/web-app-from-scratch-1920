@@ -35,15 +35,19 @@ APIseeds/music :  https://orion.apiseeds.com/api/music/search/
 
 (Work in process!!)
 
-## Which design patterns and best practices
+## Design patterns
+* single tab
+* no var
 * Search functionality
 
-## What would you like to add (feature wishlist / backlog)
+## Micro libraries 
+* Routie for routes
+
 
 ### Wishlist
 * add lyrics to the detail session (with another API)
 
-### backlog
+### Backlog
 * Detail session it now shows all the search songs (It needs to show 1)
 
 

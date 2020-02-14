@@ -25,7 +25,7 @@ const Module = (function () { //self invoking function (private-scope)
     request.open('GET', (url), true)
     request.onload = function () {
       // Begin accessing JSON data here
-      var data = JSON.parse(this.response)
+      let data = JSON.parse(this.response)
 
       if (request.status >= 200 && request.status < 400) {
         console.log(data)
