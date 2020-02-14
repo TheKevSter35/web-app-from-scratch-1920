@@ -11,7 +11,7 @@ With Discover music api you can search music songs. Basis of keywords it will se
 
 ## Which actors are there in your application? 
 
-<img width="706" alt="61fcdb347ce0a6f513d2aad138e8efb0" src="https://user-images.githubusercontent.com/43183768/74226997-cf611f00-4cbd-11ea-91e8-9310f6a75e66.png">
+<img width="" alt="61fcdb347ce0a6f513d2aad138e8efb0" src="https://user-images.githubusercontent.com/43183768/74226997-cf611f00-4cbd-11ea-91e8-9310f6a75e66.png">
 
 
 (Work in process!!)
@@ -27,11 +27,11 @@ APIseeds/music :  https://orion.apiseeds.com/api/music/search/
 
 ## Collection Records
 
-<img width="567" alt="f346871f9479694c23592af0ba95ad9d" src="https://user-images.githubusercontent.com/43183768/74240204-bf573880-4cd9-11ea-9163-ec72fe4c0e58.png">
+<img width="" alt="f346871f9479694c23592af0ba95ad9d" src="https://user-images.githubusercontent.com/43183768/74240204-bf573880-4cd9-11ea-9163-ec72fe4c0e58.png">
 
 ## How does flowed interaction through the application? (interaction diagram)
 
-<img width="642" alt="6e3f1435527e67a24e73fb8eba28dbf2" src="https://user-images.githubusercontent.com/43183768/74242102-989b0100-4cdd-11ea-838a-e40cecfec867.png">
+<img width="" alt="6e3f1435527e67a24e73fb8eba28dbf2" src="https://user-images.githubusercontent.com/43183768/74242102-989b0100-4cdd-11ea-838a-e40cecfec867.png">
 
 (Work in process!!)
 
