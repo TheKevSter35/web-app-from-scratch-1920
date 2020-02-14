@@ -128,7 +128,7 @@ body#music-libary main {
     bottom: 0;
     text-indent: -9999px;
 }
-#music-libary section ul.results ul:hover, #music-libary section ul.results li a:hover {
+#music-libary section ul.results li:hover, #music-libary section ul.results li a:hover {
     border-color: #1dcf5e;
 }
 
@@ -143,6 +143,7 @@ body#music-libary main {
     box-sizing: content-box;
     position: relative;
     text-align: center;
+    /* border-bottom: 3px solid #000; */
 }
 
 #music-libary section ul.results img {
@@ -192,11 +193,23 @@ button {
     display: flex;
     flex-direction: column;
     color:#fff;
+    max-width: 835px;
 }
 
-
+#info header {
+    padding: 15px 35px;
+}
+#info article {
+    display: flex;
+    flex-direction: row;
+    background-color: #252525;
+    margin-top: 40px;
+    border-radius: 20px;
+    border-bottom: 3px solid #000;
+}
 #info img {
     width: 250px;
+    padding: 15px;
 }
 
 

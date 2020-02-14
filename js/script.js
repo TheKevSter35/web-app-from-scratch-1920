@@ -31,22 +31,22 @@ const Module = (function () { //self invoking function (private-scope)
         console.log(data)
         console.log(data.result[0])
 
-        data.result.forEach(list => {
-          console.log(list)
+        data.result.forEach(db => {
+          console.log(db)
 
           const card = document.createElement('li')
 
 
           const title = document.createElement('strong')
-          title.textContent = list.title
+          title.textContent = db.title
 
 
           const cover = document.createElement('img')
-          cover.src = list.cover
+          cover.src = db.cover
 
           const track = document.createElement('a')
-          track.insertAdjacentHTML('beforeEnd', (list.cover, list.title))
-          track.href = ('#') + list.track_id
+          track.insertAdjacentHTML('beforeEnd', (db.cover, db.title))
+          track.href = ('#') + db.track_id
 
           block.appendChild(card)
           card.setAttribute('class', 'song')
@@ -58,29 +58,33 @@ const Module = (function () { //self invoking function (private-scope)
           routie({
 
             '5cfcacdaba7d19ca6f2f5dd5': function () {
-              const Displaylist = document.getElementById('list')
-              Displaylist.innerHTML = ""
+              // const Displaylist = document.getElementById('list')
+              // Displaylist.innerHTML = ""
               const hash = window.location.hash.slice(1)
               console.log(hash)
-              console.log(list.track_id)
+              console.log(db.track_id)
 
-              console.log(list)
+              console.log(db)
 
-              if (hash === list.track_id) {
+              if (hash === db.track_id) {
                 const details = document.getElementById('info')
                 const container = document.createElement('article')
+                const content = document.createElement('header')
                 const artist = document.createElement('H2')
-                artist.textContent = list.artist + (" - ") + list.title
+                artist.textContent = ("Artist: ") + db.artist 
+                const title = document.createElement('H3')
+                title.textContent = ("Title: ") + db.title
                 const cover = document.createElement('img')
-                cover.src = list.cover
-
+                cover.src = db.cover
                 const album = document.createElement('P')
-                album.textContent = ("Album: ") + list.album
+                album.textContent = ("Album: ") + db.album
 
                 details.appendChild(container)
-                container.appendChild(artist)
                 container.appendChild(cover)
-                container.appendChild(album)
+                container.appendChild(content)
+                content.appendChild(artist)
+                content.appendChild(title)
+                content.appendChild(album)
               }
 
 
