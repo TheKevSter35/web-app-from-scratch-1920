@@ -17,9 +17,3 @@ import {
 
 const button = document.getElementById('submitbtn')
 button.addEventListener("click", getUserInput);
-// const value = getUserInput()
-// console.log(value)
-
-
-// request()
-// requestOnload()

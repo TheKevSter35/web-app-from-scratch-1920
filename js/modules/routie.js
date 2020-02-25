@@ -1,5 +1,5 @@
-// import { request} from './request.js';
-// import { render} from './render.js';
+import { request} from './request.js';
+import { render} from './render.js';
 
 export function routie() {
     

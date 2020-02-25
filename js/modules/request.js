@@ -21,7 +21,7 @@ export function request(userInput) {
   const list = document.getElementById('info')
   const loading = document.createElement('img')
   loading.setAttribute('id', 'searchgif')
-  loading.src = "../source/loading.gif"
+  loading.src = "../source/loading.svg"
   list.appendChild(loading)
 
   request.onload = function () {
@@ -32,7 +32,6 @@ export function request(userInput) {
       console.log('done')
 
       render(data)
-      routie(data)
 
     }
   }

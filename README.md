@@ -11,6 +11,8 @@ With Discover music api you can search music songs. Basis of keywords it will se
 
 ## Which actors are there in your application? 
 
+An Actor diagram is focused on (code)objects that can be seen as the actors of your code. WHO handles functionality in your app.
+
 <img width="" alt="61fcdb347ce0a6f513d2aad138e8efb0" src="https://user-images.githubusercontent.com/43183768/74226997-cf611f00-4cbd-11ea-91e8-9310f6a75e66.png">
 
 
@@ -24,12 +26,14 @@ APIseeds/music :  https://orion.apiseeds.com/api/music/search/
 * it displays only max 20 songs per search
 * You can also search artists 
 * Rate limit: unknown
+* You can not load all songs. It olny works with keywords
 
 ## Collection Records
 
 <img width="" alt="f346871f9479694c23592af0ba95ad9d" src="https://user-images.githubusercontent.com/43183768/74240204-bf573880-4cd9-11ea-9163-ec72fe4c0e58.png">
 
 ## How does flowed interaction through the application? (interaction diagram)
+The Interaction diagram focuses on WHAT happens in your code. It visualizes functions and shows how action flows through your application.
 
 <img width="" alt="ID" src="https://user-images.githubusercontent.com/43183768/74519430-f44fcf00-4f15-11ea-8500-2f23f430989d.png">
 
@@ -37,8 +41,8 @@ APIseeds/music :  https://orion.apiseeds.com/api/music/search/
 (Work in process!!)
 
 ## Design patterns
-* single tab
-* no var
+* Single tab
+* No var
 * Search functionality
 
 ## Micro libraries 
@@ -47,8 +51,9 @@ APIseeds/music :  https://orion.apiseeds.com/api/music/search/
 
 ### Wishlist
 * add lyrics to the detail session (with another API)
+* Using a templating engine
 
 ### Backlog
-* Detail session it now shows all the search songs (It needs to show 1)
+* Make routie in a module (is now in the render module)
 
 
