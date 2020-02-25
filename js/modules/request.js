@@ -1,5 +1,11 @@
-import { render} from './render.js';
-import { routie } from './routie.js';
+import {
+  render
+} from './render.js';
+
+import {
+  routie
+} from './routie.js';
+
 export function request(userInput) {
   console.log('test')
   console.log(userInput)
@@ -10,17 +16,25 @@ export function request(userInput) {
     limit = "&limit=" + "20",
     url = endpoint + searchword + key + limit;
 
-    request.open('GET', (url), true)
-    request.onload = function () {
-    // Begin accessing JSON data here
-    let data = JSON.parse(this.response)
+  request.open('GET', (url), true)
+  console.log('loading.....')
+  const list = document.getElementById('info')
+  const loading = document.createElement('img')
+  loading.setAttribute('id', 'searchgif')
+  loading.src = "../source/loading.gif"
+  list.appendChild(loading)
 
+  request.onload = function () {
+
+    loading.remove(searchgif);
+    let data = JSON.parse(this.response)
     if (request.status >= 200 && request.status < 400) {
+      console.log('done')
+
       render(data)
       routie(data)
 
     }
-    
   }
   request.send()
 }

@@ -6,7 +6,15 @@
 * {
     box-sizing: border-box;
 }
+#info #searchgif {
 
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 140px;
+
+}
 html {
     background-color: #fff;
     font-family: 'Raleway', sans-serif;
