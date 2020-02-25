@@ -13,10 +13,8 @@ With Discover music api you can search music songs. Basis of keywords it will se
 
 An Actor diagram is focused on (code)objects that can be seen as the actors of your code. WHO handles functionality in your app.
 
-<img width="" alt="61fcdb347ce0a6f513d2aad138e8efb0" src="https://user-images.githubusercontent.com/43183768/74226997-cf611f00-4cbd-11ea-91e8-9310f6a75e66.png">
+<img width="" alt="61fcdb347ce0a6f513d2aad138e8efb02" src="https://user-images.githubusercontent.com/43183768/75253209-61991500-57de-11ea-9bd7-9ea6dedd5d8f.png">
 
-
-(Work in process!!)
 
 ## Which API is used and what are the limitations? 
 
@@ -35,10 +33,8 @@ APIseeds/music :  https://orion.apiseeds.com/api/music/search/
 ## How does flowed interaction through the application? (interaction diagram)
 The Interaction diagram focuses on WHAT happens in your code. It visualizes functions and shows how action flows through your application.
 
-<img width="" alt="ID" src="https://user-images.githubusercontent.com/43183768/74519430-f44fcf00-4f15-11ea-8500-2f23f430989d.png">
+<img width="" alt="ID2" src="https://user-images.githubusercontent.com/43183768/75253269-79709900-57de-11ea-9039-9cdf82064e9b.png">
 
-
-(Work in process!!)
 
 ## Design patterns
 * Single tab
