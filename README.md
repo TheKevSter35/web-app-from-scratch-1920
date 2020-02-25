@@ -24,7 +24,7 @@ APIseeds/music :  https://orion.apiseeds.com/api/music/search/
 * it displays only max 20 songs per search
 * You can also search artists 
 * Rate limit: unknown
-* You can not load all songs. It olny works with keywords
+* It can not load all songs. It only works with keywords
 
 ## Collection Records
 
