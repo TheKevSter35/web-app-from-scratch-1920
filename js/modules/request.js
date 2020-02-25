@@ -7,8 +7,6 @@ import {
 } from './routie.js';
 
 export function request(userInput) {
-  console.log('test')
-  console.log(userInput)
   let request = new XMLHttpRequest()
   let endpoint = 'https://orion.apiseeds.com/api/music/search/?q=',
     searchword = (userInput),
@@ -29,11 +27,12 @@ export function request(userInput) {
     loading.remove(searchgif);
     let data = JSON.parse(this.response)
     if (request.status >= 200 && request.status < 400) {
-      console.log('done')
+      console.log('Results found')
 
       render(data)
 
     }
+  
   }
   request.send()
 }
