@@ -11,8 +11,9 @@ import {
 } from './modules/render.js';
 
 import {
-    routie
-} from './modules/routie.js';
+    router
+} from './modules/router.js';
+
 
 
 const button = document.getElementById('submitbtn')

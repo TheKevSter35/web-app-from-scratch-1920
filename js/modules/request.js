@@ -2,10 +2,6 @@ import {
   render
 } from './render.js';
 
-import {
-  routie
-} from './routie.js';
-
 export function request(userInput) {
   let request = new XMLHttpRequest()
   let endpoint = 'https://orion.apiseeds.com/api/music/search/?q=',
@@ -15,7 +11,6 @@ export function request(userInput) {
     url = endpoint + searchword + key + limit;
 
   request.open('GET', (url), true)
-  console.log('loading.....')
   const list = document.getElementById('info')
   const loading = document.createElement('img')
   loading.setAttribute('id', 'searchgif')
