@@ -48,6 +48,7 @@ The Interaction diagram focuses on WHAT happens in your code. It visualizes func
 ### Wishlist
 * add lyrics to the detail session (with another API)
 * Using a templating engine
+* Pre load a selection of songs
 
 ### Backlog
 * Make routie in a module (is now in the render module)
