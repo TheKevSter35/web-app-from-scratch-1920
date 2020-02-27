@@ -1,10 +1,12 @@
 import { router } from './router.js';
 
+//create overview list
 const app = document.getElementById('list')
 let block = document.createElement('ul')
 block.setAttribute('class', 'results')
 app.appendChild(block)
 
+//render the data to html
 export function render(data) {
   console.log(data.result)
   router(data.result)
@@ -20,6 +22,7 @@ export function render(data) {
     const track = document.createElement('a')
     track.insertAdjacentHTML('beforeEnd', (db.cover, db.title))
 
+    //Give every result a link with the track id
     track.href = ('#') + db.track_id
     block.appendChild(card)
     card.setAttribute('class', 'song')
@@ -27,16 +30,15 @@ export function render(data) {
     card.appendChild(title)
     card.appendChild(track)
     track.setAttribute('id', 'show')
-    // console.log (db)
 
     routie({
-
+      // if user click on a song route it to a detail page and render 
       [db.track_id]: function () {
         const Info = document.getElementById('info')
         Info.innerHTML = ""
         const hash = window.location.hash.slice(1)
         console.log(db.track_id)
-
+        //if hash and track_id is the same render detail page
         if (hash === db.track_id) {
           const details = document.getElementById('info')
           const container = document.createElement('article')

@@ -1,3 +1,4 @@
+//imports 
 import {
     getUserInput
 } from './modules/userinput.js';
@@ -15,6 +16,6 @@ import {
 } from './modules/router.js';
 
 
-
+//search form
 const button = document.getElementById('submitbtn')
 button.addEventListener("click", getUserInput);
