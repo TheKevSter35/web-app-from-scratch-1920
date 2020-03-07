@@ -1,6 +1,3 @@
-  
-import { api } from './api.js';
-
 import { render } from './render.js';
 
 export function fetchdata(url) {

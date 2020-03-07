@@ -1,16 +1,21 @@
 // render data
+import { router } from './router.js';
 export function render(data) {
-    const app = document.getElementById('list')
-    const result = data.result;
+    let app = document.getElementById('list')
+    let result = data.result;
+    router(result)
     console.dir(result);
-    result.forEach((data, i) => {
-      const html = `
+    
+    result.forEach((data, id) => {
+      let html = `
               <li class = "results">
                 <img src= "${data.cover}"  >
                 <strong>${data.title}</strong>
-                <a href = "#${data.track_id}"></a>
+                <a href = "#${id}"></a>
               </li>
             `;
       app.insertAdjacentHTML('beforeend', html);
+      
     });
+    
   }
