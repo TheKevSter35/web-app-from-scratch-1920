@@ -151,9 +151,8 @@ body#music-libary main {
 }
 
 #music-libary section .results {
-    padding: 15px;
-    margin: 15px;
-    border-radius: 15px;
+  
+
     background-color: #252525;
     color: #fff;
     border: 3px solid #252525;
@@ -168,8 +167,8 @@ body#music-libary main {
 
 #music-libary section .results img {
     width: 100%;
-    min-height: 220px;
-    margin-bottom: 15px;
+    height: 15em;
+
 }
 
 input[type="text"] {

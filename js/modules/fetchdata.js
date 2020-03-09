@@ -7,6 +7,7 @@ fetch(url)
 })
 .then(data => {
   render(data);
+  console.log(data)
 })
 .catch(err => {
   console.log(err);
