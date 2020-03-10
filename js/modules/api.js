@@ -8,7 +8,7 @@ export function api (){
   let offset = "&offset=" + "0"
   let rating = "&rating=" + "g"
   let lang = "&lang=" + "en"
-  let url = endpoint + key + searchword + limit + offset + rating;
+  let url = endpoint + key + searchword + limit + offset + rating + lang;
 
   fetchdata(url)
 }
@@ -29,7 +29,7 @@ button.addEventListener("click", apiUserinput);
   let offset = "&offset=" + "0"
   let rating = "&rating=" + "g"
   let lang = "&lang=" + "en"
-  let url = endpoint + key + searchword + limit + offset + rating;
+  let url = endpoint + key + searchword + limit + offset + rating + lang;
 
   fetchdata(url)
 }
