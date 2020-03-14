@@ -19,7 +19,6 @@ export function render(data) {
 
     routie({
       [data.id]: function () {
-        console.log("test")
         let app = document.getElementById('info')
         document.getElementById('info').innerHTML = "";
         let html = `
