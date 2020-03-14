@@ -2,12 +2,12 @@
 
 ## What does your app do, what is the goal?
 
-![6ede119067a5309569f97222e15a8c3d](https://user-images.githubusercontent.com/43183768/74226067-28c84e80-4cbc-11ea-8fca-dd4eae058378.jpg)
+![76c8f44885b70badbf008cf8657aadcd](https://user-images.githubusercontent.com/43183768/76684794-36505b80-660f-11ea-9d37-d12cc0b8067e.jpg)
 
-With Discover music api you can search music songs. Basis of keywords it will search any song and generates a list with that keyword. 
+With Discover Gifs api you can search gifs. Basis of keywords it will search any gif and generates a list with that keyword. 
 
-* A range of songs to discover
-* Get information about the song
+* A range of gifs to discover
+* Get information about the gif
 
 ## Actor diagram
 
@@ -22,17 +22,14 @@ The Interaction diagram focuses on WHAT happens in your code. It visualizes func
 
 ## Which API is used and what are the limitations? 
 
-APIseeds/music :  https://orion.apiseeds.com/api/music/search/ 
+Giphy:  https://developers.giphy.com/
 
 ### Limits:
-* it displays only max 20 songs per search
-* You can also search Artists/Album names
 * Rate limit: unknown
-* It can not load all songs. It only works with keywords
 
 ## Collection Records
 
-<img width="" alt="f346871f9479694c23592af0ba95ad9d" src="https://user-images.githubusercontent.com/43183768/74240204-bf573880-4cd9-11ea-9163-ec72fe4c0e58.png">
+<img width="" alt="ff2a41c292e3dfe84f668fa67db401f8" src="https://user-images.githubusercontent.com/43183768/76684882-c098bf80-660f-11ea-9b34-f6d7a9c46e7d.png">
 
 ## Design patterns
 * Single tab
@@ -44,10 +41,11 @@ APIseeds/music :  https://orion.apiseeds.com/api/music/search/
 
 
 ### Wishlist
-* add lyrics to the detail session (with another API)
-* Pre load a selection of songs
+
 
 ### Backlog
 * Make routie in a router module (is now in the render module)
+* Using a templating engine (transparancy)
+* Use Filter,map, reduce. 
 
 
