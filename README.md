@@ -13,12 +13,13 @@ With Discover Gifs api you can search gifs. Basis of keywords it will search any
 
 An Actor diagram is focused on (code)objects that can be seen as the actors of your code. WHO handles functionality in your app.
 
-<img width="" alt="Actor-diagram" src="https://user-images.githubusercontent.com/43183768/75482820-d5d1e500-59a5-11ea-99c9-da71d16c594a.png">
+coming soon
 
 ## Interaction diagram
 The Interaction diagram focuses on WHAT happens in your code. It visualizes functions and shows how action flows through your application.
 
-<img width="" alt="interactiondiagram" src="https://user-images.githubusercontent.com/43183768/75482917-ff8b0c00-59a5-11ea-8110-9bf0d4402328.png">
+coming soon
+
 
 ## Which API is used and what are the limitations? 
 
