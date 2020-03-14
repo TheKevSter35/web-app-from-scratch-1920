@@ -101,10 +101,12 @@ main {
 }
 
 #music-libary section #list  {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row-reverse;
     padding: .0.5em;
     overflow: hidden;
+    flex-wrap: wrap-reverse;
+    JUSTIFY-CONTENT: center;
 }
 
 aside {
@@ -146,29 +148,38 @@ body#music-libary main {
     bottom: 0;
     text-indent: -9999px;
 }
-#music-libary section .results:hover, #music-libary section .results li a:hover {
+#music-libary section .results:hover, #music-libary section .results:focus-within, #music-libary section .results:active {
     border-color: #1dcf5e;
 }
 
 #music-libary section .results {
   
-
-    background-color: #252525;
-    color: #fff;
-    border: 3px solid #252525;
-    transition: 0.3s ease 0s;
-    box-sizing: content-box;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    /* border-bottom: 3px solid #000; */
+background-color: #252525;
+  
+color: #fff;
+  
+border: 3px solid #252525;
+  
+transition: 0.3s ease 0s;
+  
+box-sizing: content-box;
+  
+position: relative;
+  
+text-align: center;
+  
+display: flex;
+  
+flex-direction: column;
+  
+/* border-bottom: 3px solid #000; */
+  
+width: 17em;
 }
 
 #music-libary section .results img {
     width: 100%;
     height: 15em;
-
 }
 
 input[type="text"] {
@@ -214,6 +225,7 @@ button {
     flex-direction: column;
     color:#fff;
     max-width: 835px;
+    position: relative;
 }
 
 #info header {
@@ -237,6 +249,29 @@ button {
     padding-top: 15px;
 }
 
+.loadingstate {
+    /* position: absolute; */
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+#detail {
+    display: inline-flex;
+    justify-content: center;
+    background-color: #343434;
+}
+
+#detail li {
+    padding: 15px;
+    width: 50%;
+}
+#detail img {
+    width: 100%;
+}
 /****************************/
 /*+++++MEDIA QUERIES+++++*/
 /*Bij de aangegeven max-width wordt de code uitgevoerd!*/
