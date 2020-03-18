@@ -1,11 +1,20 @@
-import { render } from './render.js';
-export function router (){
+import {
+    api,
+    apiUserinput
+} from './api.js';
+import {
+    render
+} from './render.js';
 
-//   routie({
-//     z6z7V16QWDVI9tad3O: function () {
+export function router() {
 
-//       render()
-              
-// }
-// })
+    routie({
+        'gifs/:id': id => {
+            console.log ("render detail")
+            console.log(id)
+            api(id).then(data => {
+                render(data, id)
+            })
+        }
+    })
 }
