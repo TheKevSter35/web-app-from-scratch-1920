@@ -12,6 +12,7 @@ export  function render(data, id) {
 }
 
  function collection(data) {
+  document.querySelector('section[data-route=gifs-detail]').innerHTML="";
   let app = document.querySelector('section[data-route=gifs]');
   console.log(data)
   let result = data;
