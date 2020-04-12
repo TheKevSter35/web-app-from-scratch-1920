@@ -51,7 +51,7 @@ export async function apiUserinput() {
 }
 
 function clean(data) {
-  // // asynchronously clean data before returning, fake it with timeout (LoadState)
+  // // asynchronously clean data before returning, fake it with timeout (Loading State)
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(data);
@@ -61,7 +61,7 @@ function clean(data) {
 }
 
 function store(data) {
-  // asynchronously store data before returning, fake it with timeout (LoadState)
+  // asynchronously store data before returning, fake it with timeout (Loading State)
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(data);

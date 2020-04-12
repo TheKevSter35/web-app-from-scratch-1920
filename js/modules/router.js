@@ -22,7 +22,7 @@ export async function router() {
         },
         'search': () => {
             apiUserinput().then(data => {
-                render(data)
+                render(data.data)
                 updateUI('gifs');
             })
         },

@@ -327,10 +327,16 @@ div.loader {
     z-index: 9;
   }
 
-  .loader h3 {
+  .loader p {
     position: absolute;
     left: 0;
     bottom: 0;
     top: 22em;
     right: 0;
+    text-align: center;
+    
+}
+.loader p img {
+    width: 12em;
+    
 }
