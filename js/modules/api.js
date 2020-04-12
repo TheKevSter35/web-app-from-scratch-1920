@@ -1,7 +1,7 @@
 
 
 export async function api (id) {
-  let endpoint = 'http://api.giphy.com/v1/gifs/'
+  let endpoint = 'https://api.giphy.com/v1/gifs/'
   let query = "search?&q="
   let key = "quS2dai4NJv0dJVwt1KN0r1GxnGHx6B4"
   let topic = "nerd"
@@ -30,7 +30,7 @@ export async function api (id) {
 
 export async function apiUserinput() {
   let userInput = document.getElementById("user-input-field").value
-  let endpoint = 'http://api.giphy.com/v1/gifs/search?'
+  let endpoint = 'https://api.giphy.com/v1/gifs/search?'
   let key = "&api_key=" + "quS2dai4NJv0dJVwt1KN0r1GxnGHx6B4"
   let searchword = "&q=" + (userInput)
   let limit = "&limit=" + "24"
