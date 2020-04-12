@@ -1,8 +1,6 @@
-import {
-  render
-} from './render.js';
 
-export function api (id) {
+
+export async function api (id) {
   let endpoint = 'http://api.giphy.com/v1/gifs/'
   let query = "search?&q="
   let key = "quS2dai4NJv0dJVwt1KN0r1GxnGHx6B4"
@@ -16,7 +14,6 @@ export function api (id) {
 
   if (id) {
     url = `${endpoint}${id}?api_key=${key}`
-    console.log(url)
   } else {
     url = `${endpoint}${query}${topic}&api_key=${key}${limit}${offset}${rating}${lang}`;
   }
@@ -31,15 +28,8 @@ export function api (id) {
 }
 
 
-
-
-export function apiUserinput() {
-
-  let button = document.getElementById('submitbtn')
-  button.addEventListener("click", apiUserinput);
+export async function apiUserinput() {
   let userInput = document.getElementById("user-input-field").value
-  console.log("Searching for: ", userInput)
-
   let endpoint = 'http://api.giphy.com/v1/gifs/search?'
   let key = "&api_key=" + "quS2dai4NJv0dJVwt1KN0r1GxnGHx6B4"
   let searchword = "&q=" + (userInput)
@@ -52,7 +42,7 @@ export function apiUserinput() {
 
   return fetch(url)
   .then(response => response.json())
-  .then(data =>  clean(data.data))
+  .then(data =>  clean(data))
   .then(data =>  store(data))
   .catch(err => {
     console.log(err);
@@ -61,22 +51,20 @@ export function apiUserinput() {
 }
 
 function clean(data) {
-  // // asynchronously clean data before returning, fake it with timeout
+  // // asynchronously clean data before returning, fake it with timeout (LoadState)
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(data);
-      render(data)
      
     }, 1);
   });
 }
 
 function store(data) {
-  // asynchronously store data before returning, fake it with timeout
+  // asynchronously store data before returning, fake it with timeout (LoadState)
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(data);
-      render(data)
     }, 1);
   });
 }
