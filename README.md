@@ -2,7 +2,8 @@
 
 ## What does your app do, what is the goal?
 
-![76c8f44885b70badbf008cf8657aadcd](https://user-images.githubusercontent.com/43183768/76684794-36505b80-660f-11ea-9d37-d12cc0b8067e.jpg)
+![76c8f44885b70badbf008cf8657aadcd](https://user-images.githubusercontent.com/43183768/81190742-81a43c00-8fb8-11ea-88db-19b429045aee.jpg)
+
 
 With Discover Gifs api you can search gifs. Basis of keywords it will search any gif and generates a list with that keyword. 
 
@@ -13,7 +14,7 @@ With Discover Gifs api you can search gifs. Basis of keywords it will search any
 
 An Actor diagram is focused on (code)objects that can be seen as the actors of your code. WHO handles functionality in your app.
 
-![actordiagram](https://user-images.githubusercontent.com/43183768/76690011-64986000-663c-11ea-8651-43f4a3c95985.png)
+![actor-diagram (1)](https://user-images.githubusercontent.com/43183768/81191706-9df4a880-8fb9-11ea-861e-69760487c88d.png)
 
 
 ## Interaction diagram
