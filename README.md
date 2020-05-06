@@ -42,13 +42,21 @@ Giphy:  https://developers.giphy.com/
 ## Micro libraries 
 * Routie for routes
 
+## To do List
+- [x] Use a new API
+- [x] Make modules
+- [x] Use routie
+- [x] Make a detail page
+- [x] Search function
+- [x] Styling
+- [x] Add loading state
+- [x] use map
+- [ ] use filter
+- [ ] split API and Search API in there own file
+
+
 
 ### Wishlist
 * Using a templating engine (transparancy)
-
-### Backlog
-* Make routie in a router module (is now in the render module)
-* Use Filter,map, reduce. 
-* Promise doenst work in the github demo 
 
 
