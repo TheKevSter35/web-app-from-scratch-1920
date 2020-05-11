@@ -4,7 +4,7 @@ export async function api (id) {
   let endpoint = 'https://api.giphy.com/v1/gifs/'
   let query = "search?&q="
   let key = "quS2dai4NJv0dJVwt1KN0r1GxnGHx6B4"
-  let topic = "nerd"
+  let topic = "cats"
   let limit = "&limit=" + "24"
   let offset = "&offset=" + "0"
   let rating = "&rating=" + "g"
