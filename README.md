@@ -29,7 +29,7 @@ The Interaction diagram focuses on WHAT happens in your code. It visualizes func
 
 Giphy:  https://developers.giphy.com/
 
-## demo for Map, Filter, Reduce.
+## Demo for map, filter, reduce.
 
 The downsize from the api there is not really something to filter the data (for example a tag). In the Codepen demo i made a array with tags included to show waht filter can do. 
 
