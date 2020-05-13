@@ -20,7 +20,7 @@ An Actor diagram is focused on (code)objects that can be seen as the actors of y
 ## Interaction diagram
 The Interaction diagram focuses on WHAT happens in your code. It visualizes functions and shows how action flows through your application.
 
-![interaction-diagram2](https://user-images.githubusercontent.com/43183768/81579472-813ae500-93ac-11ea-868a-30cbc25c979a.png)
+![interaction-diagram2](https://user-images.githubusercontent.com/43183768/81800502-39829d80-9513-11ea-948f-c95bae61e765.png)
 
 
 
