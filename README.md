@@ -58,7 +58,7 @@ Demo https://codepen.io/thekevster-nl/pen/ExVRazo
 - [x] Styling
 - [x] Add loading state
 - [x] use map
-- [ ] use filter
+- [x] creat demo for map,filter and reduce
 - [ ] split API and Search API in there own file
 
 
